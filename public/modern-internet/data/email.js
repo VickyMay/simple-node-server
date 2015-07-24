@@ -1,0 +1,10 @@
+document.getElementById("title").innerHTML = "Modern Internet";
+document.getElementById("howemail").innerHTML = "How Email Works";
+document.getElementById("par1").innerHTML = "Email is simply a text message from one user to another and along the way, advancing technology has added extra features along the way - like image and file attachments, links, and embedded maps.";
+document.getElementById("par2").innerHTML = "An email client is used when sending and receiving email. This allows the creation and interaction from other computer users. An email client can be web-based, meaaning it can be checked through web browser (like Gmail or Yahoo) or it can be an application in your computer (like Outlook, Thunderbolt or Mail). The vision design group of visiondesign.com provides the following basic explanation on how email works";
+document.getElementById("par3").innerHTML = "1.The sender composes a message using the email client on their computer.";
+document.getElementById("par4").innerHTML = "2.When the user sends the message, the email text and attachments are uploaded to the SMTP (Simple Mail Transfer Protocol) server as outgoing mail.";
+document.getElementById("par5").innerHTML = "3.All outgoing messages wait in the outgoing mail queue while the SMTP server communicates with the DNS (Domain Name Server–like a phone book for domain names and server IP addresses) to find out where the recipient’s email server is located. If the SMTP server finds the recipient’s email server,  it will transfer the message and attachments. If the recipient’s server can’t be found, the sender will get a “Mail Failure” notification in their inbox. ";
+document.getElementById("par6").innerHTML = "4. The next time the recipient clicks “Send & Receive,” their email client will download all new messages from their own email server. You’ve got mail! ";
+document.getElementById("par7").innerHTML = "Here's a simple diagram on how email works:";
+document.getElementById("foot").innerHTML = "This is a project under CMSC2: Introduction to the Internet Midyear 2015";

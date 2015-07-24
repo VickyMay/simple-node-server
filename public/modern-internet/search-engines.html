@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subproject 2</title>
+        <style>
+            body {
+                background-image: url(back.png);
+                background-position: center;
+                background-size: 100px, 150px;
+                background-repeat: repeat;
+            }
+            .whole {
+                height: 1100px;
+                width: 1000px;
+                opacity: 2;
+                background-color: red;
+                margin: 0px auto;
+                top: 40px;
+                border-radius: 10px;
+            }
+            .head {
+                height: 120px;
+                width: 1000px;
+                background-color: #FFE4E1;
+                border-radius: 10px;
+            }
+            #title {
+                font-size: 110px;
+                text-align: center;
+                text-shadow: 5px 5px 10px black;
+            }
+            .clearfix:after {
+                display:block;
+                clear:both;
+            }
+ 
+            /*----- Menu Outline -----*/
+            .menu-wrap {
+                width:1000px;
+                box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+                background:#3e3436;
+            }
+            .box {
+                width: 1000px;
+                height: 40px;
+                background-color: white;
+                margin: 0px auto;
+            }
+ 
+            .menu {
+                width:100%;
+                margin:0px auto;
+            }
+ 
+            .menu li {
+                margin:0px auto;
+                list-style:none;
+                font-family:'Ek Mukta';
+            }
+ 
+            .menu a {
+                transition:all linear 0.15s;
+                color:#919191;
+            }
+ 
+            .menu li:hover > a, .menu .current-item > a {
+                text-decoration:none;
+                color:#be5b70;
+            }
+ 
+            .menu .arrow {
+                font-size:11px;
+                line-height:0%;
+            }
+ 
+            /*----- Top Level -----*/
+            .menu > ul > li {
+                float:left;
+                display:inline-block;
+                position:relative;
+                font-size:19px;
+            }
+ 
+            .menu > ul > li > a {
+                padding:10px 40px;
+                display:inline-block;
+                text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+            }
+ 
+            .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+                background:#2e2728;
+            }
+ 
+            /*----- Bottom Level -----*/
+            .menu li:hover .sub-menu {
+                z-index:1;
+                opacity:1;
+            }
+ 
+            .sub-menu {
+                width:160%;
+                padding:5px 0px;
+                position:absolute;
+                top:100%;
+                left:0px;
+                z-index:-1;
+                opacity:0;
+                transition:opacity linear 0.15s;
+                box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+                background:#2e2728;
+            }
+ 
+            .sub-menu li {
+                display:block;
+                font-size:16px;
+            }
+ 
+            .sub-menu li a {
+                padding:10px 30px;
+                display:block;
+            }
+     
+            .sub-menu li a:hover, .sub-menu .current-item a {
+                background:#3e3436;
+            }
+            .content {
+                height: 900px;
+                width: 1000px;
+                margin: 0px auto;
+                padding: 15px;
+                background-color: #FFE4E1;
+                border-radius: 10px;
+                position: relative;
+                box-sizing: border-box;
+                top: 10px;
+            }
+            .footer {
+                height: 40px;
+	       		width: 550px;
+	       		background-color: white;
+                float:right;
+	       		position: relative;
+	       		top:50px;
+	       		right:15px;
+	       		color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="whole">
+            <div class="head">
+                <div id="title"></div>
+            </div>
+            <div class="box">
+                <div class="menu-wrap">
+                <nav class="menu">
+                    <ul class="clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="network-protocols.html">How Current Computers...</a></li>
+                        <li><a href="email.html">Email</a></li>
+                        <li><a href="search-engines.html">Search Engines</a></li>
+                        <li>
+                            <a href="#"> Other Topics<span class="arrow">&#9660;</span></a>
+ 
+                            <ul class="sub-menu">
+                                <li><a href="blogging.html">Blogging...</a></li>
+                                <li><a href="video-streaming.html">Video Streaming...</a></li>
+                                <li><a href="microblog-social-networking">Social Networking...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                </div> 
+            </div>
+            <div class="content">
+                <h1 id="search"></h1>
+                <p id="par1"></p>
+                <h3 id="par2"></h3>
+                <p id="par3"><strong></strong></p>
+                <p id="par4"></p>
+                <p id="par5"><strong></strong></p>
+                <p id="par6"></p>
+                <h3 id="par7"></h3>
+                <p id="par8"></p>
+                <p id="par9"><strong></strong></p>
+                <p id="par10"></p>
+                <p id="par11"></p>
+                <p id="par12"></p>
+                <p id="par13"></p>
+                <p id="par14"></p>
+                <p>Source: https://moz.com/beginners-guide-to-seo/how-search-engines-operate</p>
+            </div>
+            <div class="footer">
+                <p id="foot"></p>
+            </div>
+        </div>
+        <script src="data/search-engines.js"></script>
+    </body>
+</html>
+
